@@ -9,6 +9,7 @@ data:
       enabled:
         bwoodhouse322/another-jenkins-test: true
         bwoodhouse322/jx3: true
+        bwoodhouse322/spring-boot-test: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         bwoodhouse322/another-jenkins-test: merge
         bwoodhouse322/jx3: merge
+        bwoodhouse322/spring-boot-test: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - bwoodhouse322/jx3
         - bwoodhouse322/another-jenkins-test
+        - bwoodhouse322/spring-boot-test
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - bwoodhouse322/jx3
         - bwoodhouse322/another-jenkins-test
+        - bwoodhouse322/spring-boot-test
       target_url: http://dashboard-jx.192.168.64.4.nip.io
 kind: ConfigMap
 metadata:

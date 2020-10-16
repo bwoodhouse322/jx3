@@ -9,4 +9,5 @@ spec:
     providerKind: github
     repositories:
     - name: another-jenkins-test
+    - name: spring-boot-test
     scheduler: in-repo
