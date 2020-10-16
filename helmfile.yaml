@@ -23,6 +23,8 @@ repositories:
   url: https://kubernetes-charts.storage.googleapis.com
 - name: banzaicloud-stable
   url: https://kubernetes-charts.banzaicloud.com
+- name: dev
+  url: http://bucketrepo/bucketrepo/charts/
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.7
@@ -87,5 +89,9 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: secret-infra
+- chart: dev/spring-boot-test
+  version: 1.0.1
+  name: spring-boot-test
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
