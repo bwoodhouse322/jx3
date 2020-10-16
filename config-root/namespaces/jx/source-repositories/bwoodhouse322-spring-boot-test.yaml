@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bwoodhouse322
+    provider: github
+    repository: spring-boot-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bwoodhouse322-spring-boot-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bwoodhouse322/spring-boot-test.git
+  org: bwoodhouse322
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bwoodhouse322/spring-boot-test
