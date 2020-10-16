@@ -10,4 +10,5 @@ spec:
     repositories:
     - name: another-jenkins-test
     - name: spring-boot-test
+    - name: test-app-jenkinsx
     scheduler: in-repo
