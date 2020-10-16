@@ -1,0 +1,50 @@
+# Source: spring-boot-test/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-16T15:27:16Z"
+  deletionTimestamp: null
+  name: 'spring-boot-test-1.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: bwoodhouse322
+      branch: master
+      committer:
+        accountReference:
+          - id: bwoodhouse322-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: bwoodhouse322
+      message: |
+        release 1.0.1
+      sha: 59ca1f06e3b7c83ce1bf7b14ad484eef25e7e9db
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: ben.woodhouse@capgemini.com
+        name: Ben Woodhouse
+      branch: master
+      committer:
+        accountReference:
+          - id: ben-woodhouse-0
+            provider: jenkins.io/git-github-userid
+        email: ben.woodhouse@capgemini.com
+        name: Ben Woodhouse
+      message: |
+        fix
+      sha: 452bc2dab877da1340daac99b5fe010c6955032a
+  gitCloneUrl: https://github.com/bwoodhouse322/spring-boot-test.git
+  gitHttpUrl: https://github.com/bwoodhouse322/spring-boot-test
+  gitOwner: bwoodhouse322
+  gitRepository: spring-boot-test
+  name: 'spring-boot-test'
+  releaseNotesURL: https://github.com/bwoodhouse322/spring-boot-test/releases/tag/v1.0.1
+  version: v1.0.1
+status: {}
